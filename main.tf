@@ -57,7 +57,7 @@ resource "cloudflare_record" "dkim_cname" {
   zone_id  = var.zone_id
   name     = "${each.key}._domainkey"
   type     = "CNAME"
-  value    = "${each.key}.${var.domain}.dkim.fmhosted.com."
+  value    = "${each.key}.${var.domain}.dkim.fmhosted.com"
   proxied  = true
 }
 

@@ -16,8 +16,8 @@ variable "mx_records" {
   type = map(string)
 
   default = {
-    10 = "in1-smtp.messagingengine.com."
-    20 = "in2-smtp.messagingengine.com."
+    10 = "in1-smtp.messagingengine.com"
+    20 = "in2-smtp.messagingengine.com"
   }
   description = "The Fastmail MX Records, the default should work fine unless Fastmail has changed it."
 }
