@@ -58,7 +58,7 @@ resource "cloudflare_record" "dkim_cname" {
   name     = "${each.key}._domainkey"
   type     = "CNAME"
   value    = "${each.key}.${var.domain}.dkim.fmhosted.com"
-  proxied  = true
+  proxied  = false
 }
 
 resource "cloudflare_record" "spf_txt" {
